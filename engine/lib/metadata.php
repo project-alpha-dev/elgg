@@ -867,9 +867,12 @@ function elgg_get_entity_metadata_where_sql($e_table, $n_table, $names = NULL, $
 	}
 
 	if (is_array($order_by_metadata)) {
-		if ((count($order_by_metadata) > 0) && !is_array($order_by_metadata[0])) {
-			// singleton, so fix
-			$order_by_metadata = array($order_by_metadata);
+		if (count($order_by_metadata) > 0)  {
+                    $array_values = array_values($order_by_metadata);
+                    if (!is_array($array_values[0])) {
+                        // singleton, so fix
+                        $order_by_metadata = array($order_by_metadata);
+                    }
 		}
 		foreach ($order_by_metadata as $order_by) {
 			if (is_array($order_by) && isset($order_by['name'])) {

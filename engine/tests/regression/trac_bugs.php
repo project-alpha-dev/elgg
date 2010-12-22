@@ -96,7 +96,7 @@ class ElggCoreRegressionBugsTest extends ElggCoreUnitTest {
 			'maxwidth' => 50,
 			'maxheight' => 50,
 			'square' => TRUE,
-			'upscale' => FALSE,
+			'upscale' => TRUE,
 		
 			'x1' => 75,
 			'y1' => 125,

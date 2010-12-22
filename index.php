@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Elgg index page for web-based applications
  *

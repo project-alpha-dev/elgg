@@ -1323,7 +1323,7 @@ class ElggCoreEntityGetterFunctionsTest extends ElggCoreUnitTest {
 		$invalid_md_name = 'test_metadata_name_' . rand();
 		$e = new ElggObject();
 		$e->subtype = $subtype;
-		$e->$md_name = $invalid_md_value;
+		$e->$md_name = $invalid_md_name;
 		$e->save();
 		$guids[] = $e->getGUID();
 
@@ -1390,9 +1390,9 @@ class ElggCoreEntityGetterFunctionsTest extends ElggCoreUnitTest {
 		$invalid_md_name = 'test_metadata_name_' . rand();
 		$e = new ElggObject();
 		$e->subtype = $subtype;
-		$e->$md_name = $invalid_md_value;
-		$e->$md_name2 = $invalid_md_value;
-		$e->$md_name3 = $invalid_md_value;
+		$e->$md_name = $invalid_md_name;
+		$e->$md_name2 = $invalid_md_name;
+		$e->$md_name3 = $invalid_md_name;
 		$e->save();
 		$guids[] = $e->getGUID();
 
@@ -1467,8 +1467,8 @@ class ElggCoreEntityGetterFunctionsTest extends ElggCoreUnitTest {
 		$invalid_md_name = 'test_metadata_name_' . rand();
 		$e = new ElggObject();
 		$e->subtype = $subtype;
-		$e->$md_name = $invalid_md_value;
-		$e->$md_name2 = $invalid_md_value;
+		$e->$md_name = $invalid_md_name;
+		$e->$md_name2 = $invalid_md_name;
 		$e->save();
 		$guids[] = $e->getGUID();
 
@@ -1553,11 +1553,11 @@ class ElggCoreEntityGetterFunctionsTest extends ElggCoreUnitTest {
 		$invalid_md_name = 'test_metadata_name_' . rand();
 		$e = new ElggObject();
 		$e->subtype = $subtype;
-		$e->$md_name = $invalid_md_value;
-		$e->$md_name2 = $invalid_md_value;
-		$e->$md_name3 = $invalid_md_value;
-		$e->$md_name4 = $invalid_md_value;
-		$e->$md_name5 = $invalid_md_value;
+		$e->$md_name = $invalid_md_name;
+		$e->$md_name2 = $invalid_md_name;
+		$e->$md_name3 = $invalid_md_name;
+		$e->$md_name4 = $invalid_md_name;
+		$e->$md_name5 = $invalid_md_name;
 		$e->save();
 		$guids[] = $e->getGUID();
 
@@ -1630,7 +1630,7 @@ class ElggCoreEntityGetterFunctionsTest extends ElggCoreUnitTest {
 		$invalid_md_name = 'test_metadata_name_' . rand();
 		$e = new ElggObject();
 		$e->subtype = $subtype;
-		$e->$md_name = $invalid_md_value;
+		$e->$md_name = $invalid_md_name;
 		$e->save();
 		$guids[] = $e->getGUID();
 
@@ -1675,7 +1675,7 @@ class ElggCoreEntityGetterFunctionsTest extends ElggCoreUnitTest {
 		$invalid_md_name = 'test_metadata_name_' . rand();
 		$e = new ElggObject();
 		$e->subtype = $subtype;
-		$e->$md_name = $invalid_md_value;
+		$e->$md_name = $invalid_md_name;
 		$e->save();
 		$guids[] = $e->getGUID();
 
@@ -1739,7 +1739,7 @@ class ElggCoreEntityGetterFunctionsTest extends ElggCoreUnitTest {
 		$invalid_md_name = 'test_metadata_name_' . rand();
 		$e = new ElggObject();
 		$e->subtype = $subtype;
-		$e->$md_name = $invalid_md_value;
+		$e->$md_name = $invalid_md_name;
 		$e->save();
 		$guids[] = $e->getGUID();
 
@@ -1817,7 +1817,7 @@ class ElggCoreEntityGetterFunctionsTest extends ElggCoreUnitTest {
 		$invalid_md_name = 'test_metadata_name_' . rand();
 		$e = new ElggObject();
 		$e->subtype = $subtype;
-		$e->$md_name = $invalid_md_value;
+		$e->$md_name = $invalid_md_name;
 		$e->save();
 		$guids[] = $e->getGUID();
 
@@ -1895,7 +1895,7 @@ class ElggCoreEntityGetterFunctionsTest extends ElggCoreUnitTest {
 		$guids[] = $valid->getGUID();
 		$valid_guids[] = $valid3->getGUID();
 
-		$md_valid_values = array($md_value, $md_value2);
+		//$md_valid_values = array($md_value, $md_value2);
 
 		$options = array(
 			'type' => 'object',
@@ -1954,7 +1954,7 @@ class ElggCoreEntityGetterFunctionsTest extends ElggCoreUnitTest {
 		$guids[] = $valid->getGUID();
 		$valid_guids[] = $valid3->getGUID();
 
-		$md_valid_values = array($md_value, $md_value2);
+		//$md_valid_values = array($md_value, $md_value2);
 
 		$options = array(
 			'type' => 'object',
