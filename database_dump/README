@@ -1,0 +1,16 @@
+Erik + Fendy
+26 Dec 2010
+
+
+This folder here (elgg/database_dump) is to help setup consistent database
+environment before every testing.
+
+File:
+elgg_database_dump.sql
+
+Command used to dump:
+/opt/lampp/bin/mysqldump -u root elgg_alpha > /opt/lampp/htdocs/elgg/database_dump/elgg_alpha_dump.sql
+
+Command used to restore:
+/opt/lampp/bin/mysql -u root elgg_alpha < /opt/lampp/htdocs/elgg/database_dump/elgg_alpha_dump.sql
+
